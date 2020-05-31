@@ -1,0 +1,16 @@
+version: '3'
+services:
+  mysql:
+    image: registry.access.redhat.com/rhscl/mysql-57-rhel7
+    container_name: mysql
+    restart: always
+    privileged: true
+    volumes:
+      - ./mysql:/var/lib/mysql/data:Z
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=redhat
+      - MYSQL_DATABASE=alertsdb
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=redhat
