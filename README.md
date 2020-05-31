@@ -1,13 +1,12 @@
 #Build REST API with Golang from scratch: PostgreSQL with Gorm and Gin Web Framework
 
-let's learning web programming 
-
 ## The sample todo app
 -  todo app frontend
 -  todo app backend
 
 ### Start PostgreSQL in localhost
 ``` 
+ cd build
  docker-compose -f docker-compose-pgsql.yaml up -d
 
 ```
